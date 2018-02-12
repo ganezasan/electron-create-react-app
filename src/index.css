@@ -1,5 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+.hero-icon {
+  fill: #9feaf9;
+  opacity: 1;
+}
+
+.hero-icons {
+  transform-origin: 50% 50%;
+  animation: hero-icons-animation 2s 2.5s cubic-bezier(0.5, 0.1, 0.5, 0.9) both;
+}
+
+.hello {
+  width: 100px;
+  display: inline-block;
+  animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+	0% {transform: rotate(360deg);}
+	100% {transform: rotate(0deg);}
 }
