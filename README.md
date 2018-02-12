@@ -21,13 +21,13 @@ $ yarn run package
 ## run app on raspberry pi
 
 ```
-$ zip -r release/hoge-linux-armv7l.zip release/hoge-linux-armv7l/
-$ scp release/hoge-linux-armv7l.zip pi@raspberrypi.local:/home/pi/
+$ zip -r release/electron-react-app-linux-armv7l.zip release/electron-react-app-linux-armv7l/
+$ scp release/electron-react-app-linux-armv7l.zip pi@raspberrypi.local:/home/pi/
 
 # connect raspberry pi
 $ ssh pi@raspberrypi.local
-$ unzip hoge-linux-armv7l.zip
-$ cd hoge-linux-armv7l
-$ chmod +x hoge
-$ DISPLAY=:0 ./hoge
+$ unzip electron-react-app-linux-armv7l.zip
+$ cd electron-react-app-linux-armv7l
+$ chmod +x electron-react-app
+$ DISPLAY=:0 ./electron-react-app
 ```
